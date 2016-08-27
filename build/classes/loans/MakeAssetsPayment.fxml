@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loans.MakeAssetsPaymentController">
+   <children>
+      <TextField fx:id="AmountPaid" layoutX="241.0" layoutY="202.0" />
+      <DatePicker fx:id="datePicker" layoutX="228.0" layoutY="302.0" />
+      <ComboBox fx:id="TypeComboBox" layoutX="240.0" layoutY="254.0" prefWidth="150.0" />
+      <Button fx:id="Save" layoutX="449.0" layoutY="351.0" mnemonicParsing="false" onAction="#MakePayment" text="Save" />
+      <Label layoutX="83.0" layoutY="204.0" text="Amount Paid">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="256.0" text="Type of Payment ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="304.0" text="Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="37.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoanAmount" layoutX="203.0" layoutY="37.0" text="Amount loaned">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="155.0" text="Payable">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Name" layoutX="113.0" layoutY="37.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoanAmount" layoutX="327.0" layoutY="37.0" text="LoanAmount">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Payable" layoutX="281.0" layoutY="155.0" text="Payable">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="37.0" text="Interest">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Interest" layoutX="506.0" layoutY="37.0" text="Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="107.0" text="Updated principal">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Principal" layoutX="281.0" layoutY="103.0" text="Payable">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

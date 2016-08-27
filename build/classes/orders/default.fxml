@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="1287.0" styleClass="anchorpane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orders.DefaultController">
+   <children>
+      <Pane prefHeight="859.0" prefWidth="236.0" styleClass="menubody">
+         <children>
+            <TextField alignment="CENTER" editable="false" layoutY="130.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" stylesheets="@style.css" text="HOME">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="menuitem" />
+                  <String fx:value="selected" />
+               </styleClass>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="188.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="SALES">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="246.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="ORDERS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="304.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GUMASTH">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="362.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="CHIT FUNDS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="420.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GIRVI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="478.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="INVENTORY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="536.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOANS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="594.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOYALTY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <TextField editable="false" layoutX="1150.0" layoutY="75.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Inventory">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField editable="false" layoutX="937.0" layoutY="75.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Overview">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField editable="false" layoutX="1048.0" layoutY="75.0" prefHeight="39.0" prefWidth="96.0" styleClass="topmenuitem" stylesheets="@style.css" text="Invoices">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <Pane layoutX="236.0" layoutY="130.0" prefHeight="729.0" prefWidth="1054.0" styleClass="body">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="317.0" prefWidth="674.0" styleClass="Pane" stylesheets="@style.css">
+               <children>
+                  <LineChart layoutX="14.0" layoutY="14.0" legendSide="RIGHT" prefHeight="288.0" prefWidth="615.0" styleClass="grhtxt" stylesheets="@style.css" title="Sales">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </LineChart>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="713.0" layoutY="14.0" prefHeight="249.0" prefWidth="305.0" styleClass="Pane" stylesheets="@style.css">
+               <children>
+                  <PieChart layoutX="2.0" layoutY="11.0" legendSide="RIGHT" prefHeight="221.0" prefWidth="311.0" styleClass="grhtxt" stylesheets="@style.css" title="Expenses" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="351.0" prefHeight="354.0" prefWidth="342.0" styleClass="Pane" stylesheets="@style.css">
+               <children>
+                  <TextField layoutX="99.0" layoutY="14.0" prefHeight="36.0" prefWidth="135.0" styleClass="txtfld" stylesheets="@style.css" text="Chit Funds">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow level="0.4" />
+               </effect>
+            </Pane>
+            <Pane layoutX="377.0" layoutY="351.0" prefHeight="354.0" prefWidth="311.0" styleClass="Pane" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <TextField alignment="CENTER" layoutX="100.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Kaarigar">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutX="710.0" layoutY="282.0" prefHeight="422.0" prefWidth="305.0" styleClass="Pane" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="36.0" prefWidth="115.0" styleClass="txtfld" stylesheets="@style.css" text="Gumasth">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="238.0" opacity="0.93" prefHeight="859.0" prefWidth="1048.0" styleClass="viewcont" visible="false">
+         <children>
+            <TextField editable="false" layoutX="44.0" layoutY="14.0" prefHeight="77.0" prefWidth="158.0" styleClass="heading" stylesheets="@style.css" text="HOME">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="350.0" layoutY="62.0" prefHeight="59.0" prefWidth="335.0" styleClass="topmenu" stylesheets="@style.css">
+               <children>
+                  <TextField editable="false" layoutX="8.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Overview">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="113.0" layoutY="10.0" prefHeight="39.0" prefWidth="96.0" styleClass="topmenuitem" stylesheets="@style.css" text="Invoices">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="209.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Inventory">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Separator id="sprtr1" layoutX="16.0" layoutY="48.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" />
+                  <Separator id="sprtr2" layoutX="120.0" layoutY="47.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: white;" visible="false" />
+                  <Separator id="sprtr3" layoutX="218.0" layoutY="46.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" visible="false" />
+               </children>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="146.0" prefHeight="317.0" prefWidth="657.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <LineChart layoutX="14.0" layoutY="14.0" legendSide="RIGHT" prefHeight="288.0" prefWidth="615.0" styleClass="grhtxt" stylesheets="@style.css" title="Sales">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="712.0" layoutY="146.0" prefHeight="249.0" prefWidth="322.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <PieChart layoutX="2.0" layoutY="11.0" legendSide="RIGHT" prefHeight="221.0" prefWidth="311.0" styleClass="grhtxt" stylesheets="@style.css" title="Expenses" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="478.0" prefHeight="221.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="135.0" styleClass="txtfld" stylesheets="@style.css" text="Chit Funds">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow level="0.4" />
+               </effect>
+            </Pane>
+            <Pane layoutX="407.0" layoutY="478.0" prefHeight="365.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="100.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Kaarigar">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="727.0" layoutY="413.0" prefHeight="308.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Gumasth">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="713.0" prefHeight="130.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="725.0" layoutY="736.0" prefHeight="101.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <Label layoutX="252.0" layoutY="13.0" styleClass="heading" text="Home" />
+   </children>
+</AnchorPane>

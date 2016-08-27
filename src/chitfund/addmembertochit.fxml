@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="232.0" prefWidth="454.0" styleClass="Pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chitfund.AddmembertochitController">
+   <children>
+      <Label layoutX="94.0" layoutY="64.0" styleClass="Label" text="Chit Name" textFill="#f2e5e5" />
+      <ComboBox fx:id="combobox2" layoutX="214.0" layoutY="59.0" prefHeight="25.0" prefWidth="146.0" styleClass="ComboBox" />
+      <Label layoutX="94.0" layoutY="106.0" styleClass="Label" text="Customer Name" textFill="#ebe4e4" />
+      <Button layoutX="172.0" layoutY="161.0" mnemonicParsing="false" onAction="#addmembertochit" prefHeight="25.0" prefWidth="107.0" text="Add" />
+      <Label fx:id="error" layoutX="158.0" layoutY="27.0" text="Please fill all columns" textFill="#e40606" />
+      <Label fx:id="success" layoutX="158.0" layoutY="31.0" prefHeight="15.0" prefWidth="125.0" text="Added succesfully" textFill="#37cd4d" />
+      <ComboBox fx:id="customername" layoutX="214.0" layoutY="99.0" onKeyReleased="#suggestions" prefHeight="25.0" prefWidth="146.0" styleClass="ComboBox" />
+   </children>    
+</AnchorPane>

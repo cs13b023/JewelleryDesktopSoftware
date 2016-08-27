@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1363.0" prefWidth="1287.0" styleClass="anchorpane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory.InventoryDetailsController">
+   <children>
+      <Pane prefHeight="859.0" prefWidth="237.0" styleClass="menubody">
+         <children>
+            <TextField alignment="CENTER" editable="false" layoutY="140.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleHome" prefHeight="59.0" prefWidth="238.0" stylesheets="@style.css" text="HOME">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="menuitem" />
+                  <String fx:value="selected" />
+               </styleClass>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="198.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleSales" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="SALES">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Orders" alignment="CENTER" editable="false" layoutY="256.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleOrders" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="ORDERS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="employee" alignment="CENTER" editable="false" layoutY="314.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleemployee" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GUMASTH">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="372.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handlechits" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="CHIT FUNDS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Girvi" alignment="CENTER" editable="false" layoutY="430.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleGirviClick" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GIRVI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="488.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleInventory" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="INVENTORY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Loans" alignment="CENTER" editable="false" layoutY="546.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleLoanClick" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOANS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+             <TextField fx:id="loyalty" alignment="CENTER" editable="false" layoutY="604.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleloyalty" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOYALTY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            
+            
+            
+         </children>
+      </Pane>
+      <TextField fx:id="InvDetails" editable="false" layoutX="844.0" layoutY="89.0" onMouseClicked="#handleInvDetails" prefHeight="39.0" prefWidth="113.0" styleClass="topmenuitem" stylesheets="@style.css" text="  Details">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="InvWholeSaler" editable="false" layoutX="962.0" layoutY="89.0" onMouseClicked="#handleInvWholeSaler" prefHeight="39.0" prefWidth="128.0" styleClass="topmenuitem" stylesheets="@style.css" text="WholeSaler">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="InvOverView" editable="false" layoutX="717.0" layoutY="89.0" onMouseClicked="#handleOverView" prefHeight="39.0" prefWidth="122.0" styleClass="topmenuitem" stylesheets="@style.css" text=" OverView">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <ScrollPane layoutX="236.0" layoutY="140.0" prefHeight="795.0" prefViewportHeight="710.0" prefViewportWidth="998.0" prefWidth="1048.0" styleClass="body">
+         <content>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="1458.0" prefWidth="1034.0" styleClass="body" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <TilePane fx:id="MainTilePane" layoutX="28.0" layoutY="17.0" prefHeight="36.0" prefWidth="963.0" styleClass="Pane">
+                     <children>
+                        <Pane fx:id="RootPane" onMouseClicked="#handleRootClicked" prefHeight="67.0" prefWidth="172.0">
+                           <children>
+                              <Label fx:id="RootLabel" layoutX="37.0" layoutY="25.0" onMouseClicked="#handleRootClicked" text="Root" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="67.0" prefWidth="211.0">
+                           <children>
+                              <Label fx:id="AL1" layoutX="21.0" layoutY="25.0" text="&gt;" visible="false" />
+                              <Label fx:id="TL1" layoutX="84.0" layoutY="25.0" onMouseClicked="#handleTL1" text="" visible="false" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="67.0" prefWidth="228.0">
+                           <children>
+                              <Label fx:id="AL2" layoutX="14.0" layoutY="25.0" text="&gt;" visible="false" />
+                              <Label fx:id="TL2" layoutX="87.0" layoutY="25.0" onMouseClicked="#handleTL2" text="" visible="false" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="67.0" prefWidth="238.0">
+                           <children>
+                              <Label fx:id="AL3" layoutX="14.0" layoutY="25.0" text="&gt;" visible="false" />
+                              <Label fx:id="TL3" layoutX="88.0" layoutY="25.0" onMouseClicked="#handleTL3" text="" visible="false" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </TilePane>
+                  <TilePane fx:id="ItemsTilePane" layoutX="29.0" layoutY="75.0" prefHeight="85.0" prefWidth="961.0" styleClass="Pane" />
+                  <Pane layoutX="30.0" layoutY="183.0" prefHeight="995.0" prefWidth="981.0">
+                     <children>
+                        <TableView fx:id="InvTable" layoutX="39.0" layoutY="701.0" prefHeight="221.0" prefWidth="908.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="InvSearchAnything" layoutX="40.0" layoutY="651.0" onKeyReleased="#handleSearchAnything" prefHeight="30.0" prefWidth="210.0" promptText="Search By Anything" styleClass="TextField" />
+                        <Button fx:id="InvDelSelectedItem" layoutX="811.0" layoutY="945.0" mnemonicParsing="false" onAction="#handleInvDeleteSelectedItem" prefHeight="36.0" prefWidth="135.0" text="DeleteSelectedItem" />
+                        <ImageView fx:id="ItemImage" fitHeight="275.0" fitWidth="311.0" layoutX="43.0" layoutY="23.0" pickOnBounds="true" styleClass="Pane_specific">
+                           <image>
+                              <Image url="@../images/Gold.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="XL1" layoutX="413.0" layoutY="29.0" styleClass="Label_heading" text="Total Items:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL1" layoutX="706.0" layoutY="30.0" styleClass="Label_heading" text="1450">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL2" layoutX="709.0" layoutY="70.0" styleClass="Label_heading" text="1Kg">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL2" layoutX="414.0" layoutY="69.0" styleClass="Label_heading" text="Total Metal Wt:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL5" layoutX="415.0" layoutY="187.0" styleClass="Label_heading" text="Weekly Demand:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL5" layoutX="710.0" layoutY="189.0" styleClass="Label_heading" text="10 pieces">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL4" layoutX="710.0" layoutY="148.0" styleClass="Label_heading" text="15%">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL4" layoutX="415.0" layoutY="147.0" styleClass="Label_heading" text="Average Profit %:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL3" layoutX="414.0" layoutY="108.0" styleClass="Label_heading" text="Total Value(Todays Rate):">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL3" layoutX="710.0" layoutY="109.0" styleClass="Label_heading" text="1 Cr">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL7" layoutX="415.0" layoutY="271.0" styleClass="Label_heading" text="Weekly Profit:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL7" layoutX="710.0" layoutY="272.0" styleClass="Label_heading" text="2000">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="YL6" layoutX="711.0" layoutY="229.0" styleClass="Label_heading" text="500000">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="XL6" layoutX="416.0" layoutY="227.0" styleClass="Label_heading" text="Weekly Revenue">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="40.0" layoutY="319.0" prefHeight="3.0" prefWidth="880.0" styleClass="Separator_specific" />
+                        <PieChart fx:id="PC1" layoutX="43.0" layoutY="340.0" prefHeight="203.0" prefWidth="275.0" styleClass="Pane" />
+                        <PieChart fx:id="PC2" layoutX="342.0" layoutY="342.0" prefHeight="202.0" prefWidth="276.0" styleClass="Pane" />
+                        <PieChart fx:id="PC3" layoutX="642.0" layoutY="342.0" prefHeight="204.0" prefWidth="267.0" styleClass="Pane" />
+                        <Separator layoutX="40.0" layoutY="607.0" prefHeight="3.0" prefWidth="883.0" styleClass="Separator_specific" />
+                        <Label layoutX="113.0" layoutY="555.0" styleClass="Label" text="Items in Category" />
+                        <Label layoutX="403.0" layoutY="555.0" styleClass="Label" text="Profit Share of Items" />
+                        <Label layoutX="700.0" layoutY="555.0" styleClass="Label" text="Item Sales by Design" />
+                        <DatePicker fx:id="InvSearchDate" layoutX="262.0" layoutY="651.0" onAction="#handleInvSearchDate" prefHeight="30.0" prefWidth="190.0" promptText="Search By Date" styleClass="DatePicker" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="238.0" opacity="0.93" prefHeight="915.0" prefWidth="1048.0" styleClass="viewcont" visible="false">
+         <children>
+            <TextField editable="false" layoutX="44.0" layoutY="14.0" prefHeight="77.0" prefWidth="158.0" styleClass="heading" stylesheets="@style.css" text="HOME">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="350.0" layoutY="62.0" prefHeight="59.0" prefWidth="335.0" styleClass="topmenu" stylesheets="@style.css">
+               <children>
+                  <TextField editable="false" layoutX="8.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Overview">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="113.0" layoutY="10.0" prefHeight="39.0" prefWidth="96.0" styleClass="topmenuitem" stylesheets="@style.css" text="Invoices">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="209.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Inventory">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Separator id="sprtr1" layoutX="16.0" layoutY="48.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" />
+                  <Separator id="sprtr2" layoutX="120.0" layoutY="47.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: white;" visible="false" />
+                  <Separator id="sprtr3" layoutX="218.0" layoutY="46.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" visible="false" />
+               </children>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="146.0" prefHeight="317.0" prefWidth="657.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <LineChart layoutX="14.0" layoutY="14.0" legendSide="RIGHT" prefHeight="288.0" prefWidth="615.0" styleClass="grhtxt" stylesheets="@style.css" title="Sales">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="712.0" layoutY="146.0" prefHeight="249.0" prefWidth="322.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <PieChart layoutX="2.0" layoutY="11.0" legendSide="RIGHT" prefHeight="221.0" prefWidth="311.0" styleClass="grhtxt" stylesheets="@style.css" title="Expenses" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="478.0" prefHeight="221.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="135.0" styleClass="txtfld" stylesheets="@style.css" text="Chit Funds">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow level="0.4" />
+               </effect>
+            </Pane>
+            <Pane layoutX="407.0" layoutY="478.0" prefHeight="365.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="100.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Kaarigar">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="727.0" layoutY="413.0" prefHeight="308.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Gumasth">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="713.0" prefHeight="130.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="725.0" layoutY="736.0" prefHeight="101.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <TextField fx:id="InvAddNew" editable="false" layoutX="1095.0" layoutY="89.0" onMouseClicked="#handleInvAddNew" prefHeight="39.0" prefWidth="135.0" styleClass="topmenuitem" stylesheets="@style.css" text="Add Inventory">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="261.0" layoutY="12.0" styleClass="heading" text="Home" />
+      <Pane layoutX="236.0" layoutY="103.0" prefHeight="30.0" prefWidth="496.0">
+         <children>
+            <Label layoutX="71.0" layoutY="11.0" styleClass="Label" text="Gold" />
+            <Label layoutX="51.0" layoutY="9.0" styleClass="Label" text="&gt;" />
+            <Label layoutX="11.0" layoutY="9.0" styleClass="Label" text="Root" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

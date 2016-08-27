@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="menuitem" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory.InventoryEditWholeSalerController">
+   <children>
+      <Button fx:id="InvSaveDeatils" layoutX="324.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleInvSaveDetails" text="Save Updated Details" />
+      <TextField fx:id="Name" layoutX="143.0" layoutY="61.0" promptText="WSName" />
+      <Label layoutX="40.0" layoutY="66.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="127.0" text="Address" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="180.0" text="MobileNo" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="27.0" text="WholeSaler Details:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="Address" layoutX="143.0" layoutY="122.0" promptText="Address" />
+ <TextField fx:id="MobileNo" layoutX="143.0" layoutY="175.0" promptText="ContactNo" />
+      <Label layoutX="46.0" layoutY="231.0" text="EmailID" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email" layoutX="143.0" layoutY="228.0" promptText="Email" />
+      <Button fx:id="DelWS" layoutX="36.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDelWS" text="DeleteWholeSaler" />
+      
+      
+     
+      
+      
+   </children>
+</AnchorPane>

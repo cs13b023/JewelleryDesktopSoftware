@@ -1,0 +1,42 @@
+.menuitem{
+	-fx-background-color:rgb(19,30,39);
+	-fx-text-fill:rgb(26,188,156);
+}
+.menuitem:hover{
+	-fx-background-color:rgb(27,39,48);
+}
+.selected{
+	-fx-background-color:rgb(27,39,48);
+}
+.profimage{
+
+}
+.viewcont{
+	-fx-background-color:rgb(27,39,48);
+}
+.heading{
+	-fx-background-color:rgb(27,39,48);
+	-fx-text-fill:white;
+}
+.topmenu{
+	-fx-background-color:rgb(27,39,48);
+	-fx-text-fill:white;
+
+}
+.topmenuitem{
+	-fx-background-color:rgb(27,39,48);	
+	-fx-text-fill:white;
+	-fx-border-bottom-width:2px;
+	-fx-border-bottom-color:white;
+}
+.salesbox{
+	-fx-background-color:rgb(27,39,48);
+	-fx-box-shadow:0px 0px 3px 3px white;
+}
+.txtfld{
+	-fx-background-color:rgb(27,39,48);		
+	-fx-text-fill:white;
+}
+.grhtxt{
+	-fx-title-color:white;	
+}

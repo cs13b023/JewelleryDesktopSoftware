@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="160.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory.InventoryTypePopupController">
+   <children>
+      <Button fx:id="PopupAddType" layoutX="101.0" layoutY="97.0" mnemonicParsing="false" onAction="#handlePopupAddType" text="Add" />
+      <Label layoutX="42.0" layoutY="42.0" text="NewType" />
+      <TextField fx:id="PopupNewType" layoutX="133.0" layoutY="38.0" prefHeight="25.0" prefWidth="110.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loans.InterestCalculatorFXMLController">
+   <children>
+      <TextField fx:id="Amount" layoutX="249.0" layoutY="42.0" />
+      <TextField fx:id="Number_of_months" layoutX="249.0" layoutY="85.0" />
+      <TextField fx:id="Interest_rate" layoutX="249.0" layoutY="133.0" />
+      <Button fx:id="Calculate_interest" layoutX="289.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleCalculateInterest" text="Calculate Interest" />
+      <Label layoutX="83.0" layoutY="46.0" text="Amount" />
+      <Label layoutX="83.0" layoutY="89.0" text="Number of months" />
+      <Label layoutX="83.0" layoutY="137.0" text="Interest Rate" />
+      <Label layoutX="140.0" layoutY="302.0" text="Interest" />
+      <Label fx:id="Interest" layoutX="249.0" layoutY="294.0" text="Interest" textFill="#ee0404">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Type" layoutX="249.0" layoutY="175.0" prefWidth="150.0" />
+      <Label fx:id="Final_amount" layoutX="249.0" layoutY="338.0" text="Final Amount" textFill="#ee0404">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="346.0" text="Final Amount" />
+      <Label layoutX="71.0" layoutY="179.0" text="Type" />
+   </children>
+</AnchorPane>

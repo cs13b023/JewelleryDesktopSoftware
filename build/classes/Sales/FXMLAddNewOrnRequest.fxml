@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SalesAndInventory.FXMLAddNewOrnRequestController">
+   <children>
+      <TextField fx:id="Barcode" layoutX="130.0" layoutY="50.0" prefHeight="25.0" prefWidth="145.0" />
+      <Label layoutX="26.0" layoutY="55.0" text="OrnamentID">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="93.0" text="Type" />
+      <Label layoutX="26.0" layoutY="137.0" text="Design" />
+      <Label layoutX="26.0" layoutY="185.0" text="Purity" />
+      <Label layoutX="26.0" layoutY="234.0" text="NetWeight" />
+      <Label layoutX="300.0" layoutY="48.0" text="GrossWeight" />
+      <Label layoutX="325.0" layoutY="85.0" text="Price" />
+      <Label layoutX="325.0" layoutY="137.0" text="CustomerID" />
+      <Label layoutX="325.0" layoutY="185.0" text="AdvancePaid" />
+      <Label layoutX="325.0" layoutY="234.0" />
+      <TextField fx:id="Type" layoutX="95.0" layoutY="88.0" prefHeight="25.0" prefWidth="145.0" />
+      <TextField fx:id="DesignNo" layoutX="82.0" layoutY="132.0" />
+      <TextField fx:id="Purity" layoutX="130.0" layoutY="180.0" />
+      <TextField fx:id="NetWeight" layoutX="130.0" layoutY="229.0" />
+      <TextField fx:id="GrossWeight" layoutX="416.0" layoutY="38.0" prefHeight="25.0" prefWidth="145.0" />
+      <TextField fx:id="Price" layoutX="390.0" layoutY="81.0" />
+      <TextField fx:id="CusID" layoutX="451.0" layoutY="132.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="AdvPaid" layoutX="430.0" layoutY="180.0" prefHeight="25.0" prefWidth="131.0" />
+      <Label layoutX="341.0" layoutY="234.0" text="Date" />
+      <DatePicker fx:id="Date" layoutX="413.0" layoutY="222.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button fx:id="AddOrnament" layoutX="347.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleAddOrnament" text="Add" />
+      <Button fx:id="Home" layoutX="117.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleHome" text="Home" />
+   </children>
+</AnchorPane>

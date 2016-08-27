@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SalesAndInventory.FXMLAddInventoryController">
+   <children>
+      <Label layoutX="26.0" layoutY="44.0" text="Type" />
+      <Label layoutX="7.0" layoutY="162.0" text="DesignName" />
+      <Label layoutX="30.0" layoutY="202.0" text="Purity" />
+      <Label layoutX="18.0" layoutY="238.0" text="NetWeight" />
+      <Label layoutX="11.0" layoutY="272.0" text="GrossWeight" />
+      <Label layoutX="321.0" layoutY="69.0" text="WholeSalerName" />
+      <Label layoutX="337.0" layoutY="149.0" text="Date" />
+      <Label layoutX="337.0" layoutY="111.0" text="CostPrice" />
+      <TextField fx:id="Purity" layoutX="119.0" layoutY="197.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="NetWeight" layoutX="119.0" layoutY="233.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="GrossWeight" layoutX="120.0" layoutY="267.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="CostPrice" layoutX="431.0" layoutY="106.0" prefHeight="25.0" prefWidth="116.0" />
+      <DatePicker fx:id="Date" layoutX="429.0" layoutY="144.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="65.0" layoutY="13.0" prefHeight="25.0" prefWidth="180.0" text="Enter Ornament Details:" />
+      <Button fx:id="AddOrnament" layoutX="365.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleAddOrnament" text="AddOrnament" />
+      <Button fx:id="Home" layoutX="52.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="37.0" prefWidth="83.0" text="Home" />
+      <ComboBox fx:id="WholeSalerName" layoutX="442.0" layoutY="64.0" prefHeight="25.0" prefWidth="127.0" promptText="Name" />
+      <ComboBox fx:id="Type" layoutX="94.0" layoutY="39.0" prefWidth="150.0" promptText="OrnType" />
+      <Label layoutX="26.0" layoutY="104.0" text="Material" />
+      <ComboBox fx:id="Material" layoutX="108.0" layoutY="99.0" prefWidth="150.0" />
+      <ComboBox fx:id="DesignName" layoutX="108.0" layoutY="164.0" prefWidth="150.0" promptText="Design" />
+      <Label layoutX="340.0" layoutY="202.0" text="SellingPrice" />
+      <TextField fx:id="SellingPrice" layoutX="436.0" layoutY="197.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button fx:id="AddNewWholeSaler" layoutX="581.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleAddNewWholeSaler" text="AddNewWholeSaler" />
+      <Label layoutX="335.0" layoutY="31.0" text="Barcode" />
+      <TextField fx:id="Barcode" layoutX="410.0" layoutY="26.0" />
+      <Label layoutX="24.0" layoutY="77.0" prefHeight="15.0" prefWidth="38.0" text="AddNewtype:" />
+      <Button fx:id="AddNewType" layoutX="213.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleAddNewType" text="AddNewType" />
+      <Button fx:id="AddNewDesign" layoutX="247.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleAddNewDesign" text="AddNewDesign" />
+   </children>
+</AnchorPane>

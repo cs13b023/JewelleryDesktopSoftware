@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="172.0" prefWidth="282.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="SalesAndInventory.FXMLMaterialPopupController">
+   <children>
+      <Button fx:id="AddMaterial" layoutX="103.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleAddMaterial" text="Add" />
+      <Label layoutX="13.0" layoutY="47.0" prefHeight="17.0" prefWidth="87.0" text="NewMaterial" />
+      <TextField fx:id="NewMaterialName" layoutX="103.0" layoutY="43.0" promptText="NewMaterialName" />
+   </children>
+</AnchorPane>

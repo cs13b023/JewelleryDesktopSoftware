@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="277.0" prefWidth="469.0" styleClass="Pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chitfund.TakepaymentController">
+   <children>
+      <Label layoutX="92.0" layoutY="64.0" styleClass="Label" text="Amount paid" textFill="#eee5e5" />
+      <TextField fx:id="amountpaid" layoutX="194.0" layoutY="59.0" prefHeight="25.0" prefWidth="167.0" styleClass="TextField" />
+      <Label layoutX="92.0" layoutY="110.0" styleClass="Label" text="Date paid" textFill="#fcf5f5" />
+      <DatePicker fx:id="datepaid" layoutX="195.0" layoutY="105.0" prefHeight="25.0" prefWidth="167.0" styleClass="DatePicker" />
+      <Button layoutX="172.0" layoutY="165.0" mnemonicParsing="false" onAction="#Addpayment" prefHeight="25.0" prefWidth="116.0" text="Add" />
+   </children>
+</AnchorPane>

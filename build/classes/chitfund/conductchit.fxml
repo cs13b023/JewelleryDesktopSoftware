@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="340.0" prefWidth="487.0" styleClass="Pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chitfund.ConductchitController">
+   <children>
+      <TextField fx:id="nameconductchit" layoutX="217.0" layoutY="79.0" prefHeight="25.0" prefWidth="152.0" styleClass="TextField" />
+      <Label layoutX="88.0" layoutY="83.0" prefHeight="15.0" prefWidth="114.0" styleClass="Label" text="Customer Name" textFill="#fcf5f5" />
+      <TextField fx:id="amountgiven" layoutX="217.0" layoutY="122.0" prefHeight="25.0" prefWidth="152.0" styleClass="TextField" />
+      <Label layoutX="90.0" layoutY="167.0" styleClass="Label" text="Date" textFill="#ebe2e2" />
+      <DatePicker fx:id="datetaken" layoutX="218.0" layoutY="162.0" prefHeight="25.0" prefWidth="152.0" styleClass="DatePicker" />
+      <Button layoutX="189.0" layoutY="265.0" mnemonicParsing="false" onAction="#Addconductchit" prefHeight="25.0" prefWidth="98.0" text="Add" />
+      <Label layoutX="88.0" layoutY="127.0" prefHeight="15.0" prefWidth="98.0" styleClass="Label" text="Amount given" textFill="#fcf8f8" />
+      <Label layoutX="88.0" layoutY="207.0" styleClass="Label" text="Type" textFill="#f5f2f2" />
+      <ComboBox fx:id="type" layoutX="218.0" layoutY="202.0" prefHeight="25.0" prefWidth="152.0" styleClass="ComboBox" />
+   </children>
+</AnchorPane>

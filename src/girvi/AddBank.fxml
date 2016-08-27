@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="girvi.AddBankController">
+   <children>
+      <TextField fx:id="BankName" layoutX="259.0" layoutY="70.0" prefHeight="8.0" prefWidth="163.0" />
+      <TextField fx:id="Branch" layoutX="259.0" layoutY="123.0" prefHeight="8.0" prefWidth="163.0" />
+      <TextField fx:id="InterestRate" layoutX="259.0" layoutY="175.0" prefHeight="8.0" prefWidth="163.0" />
+      <TextField fx:id="LoanPercent" layoutX="259.0" layoutY="223.0" prefHeight="8.0" prefWidth="163.0" />
+      <Button layoutX="300.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleAddBank" text="Add Bank" />
+      <Label layoutX="125.0" layoutY="74.0" text="Bank Name" />
+      <Label layoutX="125.0" layoutY="127.0" text="Branch" />
+      <Label layoutX="125.0" layoutY="179.0" text="Interest" />
+      <Label layoutX="125.0" layoutY="227.0" text="Loan percentage" />
+      <TextField fx:id="CompoundAfter" layoutX="259.0" layoutY="274.0" prefHeight="8.0" prefWidth="163.0" />
+      <Label layoutX="125.0" layoutY="278.0" text="Compound After" />
+   </children>
+</AnchorPane>

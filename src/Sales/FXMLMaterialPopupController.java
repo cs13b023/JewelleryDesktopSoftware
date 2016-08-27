@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Sales;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
+/**
+ * FXML Controller class
+ *
+ * @author vinay kumar reddy
+ */
+public class FXMLMaterialPopupController implements Initializable {
+
+    @FXML
+    private Button AddMaterial;
+    @FXML
+    private TextField NewMaterialName;
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+    @FXML
+    private void handleAddMaterial(ActionEvent event) {
+           String a=NewMaterialName.getText();
+         
+      SqlLogin.executeUpdate("INSERT INTO INV_MAT VALUES(NULL,'"+a+"')");
+      tryclass.setvalue(a);
+    }
+    
+}

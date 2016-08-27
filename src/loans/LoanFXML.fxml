@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="1287.0" styleClass="anchorpane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loans.LoanFXMLController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="859.0" prefWidth="238.0" styleClass="menubody">
+         <children>
+            <TextField alignment="CENTER" editable="false" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleHomeClick" prefHeight="59.0" prefWidth="244.0" stylesheets="@style.css" text="HOME">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="menuitem" />
+                  <String fx:value="selected" />
+               </styleClass>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="186.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="SALES">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Orders" alignment="CENTER" editable="false" layoutY="244.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="ORDERS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="employee" alignment="CENTER" editable="false" layoutY="302.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="GUMASTH">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="360.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="CHIT FUNDS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Girvi" alignment="CENTER" editable="false" layoutY="418.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="GIRVI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" layoutY="476.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="INVENTORY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Loans" alignment="CENTER" editable="false" layoutY="534.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="LOANS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="loyalty" alignment="CENTER" editable="false" layoutY="592.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="244.0" styleClass="menuitem" stylesheets="@style.css" text="LOYALTY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="238.0" opacity="0.93" prefHeight="859.0" prefWidth="1048.0">
+         <children>
+            <TextField fx:id="LoansTextField" editable="false" layoutX="781.0" layoutY="74.0" onMouseClicked="#handleLoanClick" prefHeight="39.0" prefWidth="122.0" styleClass="topmenuitem" stylesheets="@style.css" text="  Payments">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="OverviewTextField" editable="false" layoutX="541.0" layoutY="74.0" prefHeight="39.0" prefWidth="113.0" styleClass="topmenuitem" stylesheets="@style.css" text=" Overview">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="LoansTextField1" editable="false" layoutX="910.0" layoutY="74.0" onMouseClicked="#handleLoanClick" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Planning">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="InvoicesTextField" editable="false" layoutX="661.0" layoutY="74.0" onMouseClicked="#handleInvoicesClick" prefHeight="39.0" prefWidth="113.0" styleClass="topmenuitem" stylesheets="@style.css" text="  Accounts">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <Pane layoutX="-3.0" layoutY="128.0" prefHeight="730.0" prefWidth="1055.0" styleClass="body">
+               <children>
+                  <Pane layoutX="26.0" layoutY="34.0" prefHeight="529.0" prefWidth="621.0" styleClass="Pane" stylesheets="@style.css">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <children>
+                        <TabPane layoutX="13.0" layoutY="18.0" prefHeight="502.0" prefWidth="596.0" styleClass="TabPane_AnchorPane" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Quick Payments">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane fx:id="AssetsPaymentPane" layoutX="3.0" layoutY="44.0" prefHeight="200.0" prefWidth="594.0" />
+                                          <ScrollPane fx:id="LiabilitiesPaymentPane" layoutX="4.0" layoutY="273.0" prefHeight="200.0" prefWidth="594.0" />
+                                       </children></AnchorPane>
+                                    
+                              </content>
+                            </Tab>
+                            <Tab text="      List      ">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane fx:id="AssetsList" layoutX="13.0" layoutY="63.0" prefHeight="396.0" prefWidth="270.0" />
+                                          <Separator layoutX="295.0" layoutY="73.0" orientation="VERTICAL" prefHeight="431.0" prefWidth="6.0" styleClass="separator_specific" />
+                                          <ScrollPane fx:id="LiabilitiesList" layoutX="315.0" layoutY="64.0" prefHeight="396.0" prefWidth="270.0" />
+                                          <Label layoutX="123.0" layoutY="23.0" styleClass="Label_heading" text="Assets" textFill="#fffefe">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="420.0" layoutY="22.0" styleClass="Label_heading" text="Liabilities" textFill="#fffefe">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="InterestCalculatorPane" layoutX="27.0" layoutY="576.0" onMouseClicked="#handleInterestCalculatorClick" prefHeight="77.0" prefWidth="294.0" styleClass="Pane" stylesheets="@style.css">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <children>
+                        <Label layoutX="62.0" layoutY="28.0" styleClass="Label_heading" text="Interest Calculator" textFill="#fffefe">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="668.0" layoutY="235.0" prefHeight="460.0" prefWidth="347.0" styleClass="Pane" stylesheets="@style.css">
+                     <children>
+                        <TextField alignment="CENTER" layoutX="101.0" layoutY="4.0" prefHeight="38.0" prefWidth="165.0" styleClass="txtfld" stylesheets="@style.css" text="Notifications">
+                           <font>
+                              <Font name="SansSerif Bold" size="19.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="666.0" layoutY="34.0" prefHeight="181.0" prefWidth="347.0" styleClass="Pane" stylesheets="@style.css">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <children>
+                        <Label layoutX="127.0" layoutY="14.0" styleClass="Label_heading" text="Given">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="221.0" layoutY="14.0" styleClass="Label_heading" text="Borrowed">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="119.0" styleClass="Label_heading" text="Monthly">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="74.0" styleClass="Label_heading" text="Amount">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="95.0" layoutY="45.0" prefHeight="3.0" prefWidth="238.0" />
+                        <Separator layoutX="93.0" layoutY="45.0" orientation="VERTICAL" prefHeight="118.0" prefWidth="4.0" />
+                        <Label layoutX="21.0" layoutY="137.0" styleClass="Label_heading" text="Interest">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="56.0" styleClass="Label_heading" text="Loan">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="GivenLoanAmount" layoutX="140.0" layoutY="65.0" styleClass="Label" text="50L">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="BorrowedLoansMonthlyInterest" layoutX="256.0" layoutY="128.0" styleClass="Label" text="25K">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="GivenLoansMonthlyInterest" layoutX="139.0" layoutY="128.0" styleClass="Label" text="50K">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="BorrowedLoanAmount" layoutX="257.0" layoutY="63.0" styleClass="Label" text="20L">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="209.0" layoutY="53.0" orientation="VERTICAL" prefHeight="101.0" prefWidth="6.0" styleClass="separator_vertical" />
+                        <Separator layoutX="106.0" layoutY="102.0" prefHeight="3.0" prefWidth="207.0" styleClass="separator_vertical" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="EMICalculatorPane" layoutX="337.0" layoutY="579.0" onMouseClicked="#handleEMICalculatorClick" prefHeight="77.0" prefWidth="305.0" styleClass="Pane" stylesheets="@style.css">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <children>
+                        <Label layoutX="93.0" layoutY="30.0" styleClass="Label_heading" text="EMI Calculator" textFill="#fffefe">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Label layoutX="25.0" layoutY="14.0" styleClass="heading" text="Home" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+</AnchorPane>

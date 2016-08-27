@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="1287.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory.AddInventoryController">
+   <children>
+      <Pane prefHeight="859.0" prefWidth="238.0" style="-fx-background-color: rgb(19,30,38);">
+         <children>
+            <TextField fx:id="Home" editable="false" layoutY="185.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleHome" prefHeight="59.0" prefWidth="238.0" stylesheets="@style.css" text="HOME">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="menuitem" />
+                  <String fx:value="selected" />
+               </styleClass>
+            </TextField>
+            <TextField editable="false" layoutY="244.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="SALES">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="303.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="ORDERS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="362.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GUMASTH">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="421.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="CHIT FUNDS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="GIRVI">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="539.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="INVENTORY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            <TextField editable="false" layoutY="599.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOANS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+             <TextField editable="false" layoutY="659.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="238.0" styleClass="menuitem" stylesheets="@style.css" text="LOYALTY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gautami" size="24.0" />
+               </font>
+            </TextField>
+            
+            
+            
+         </children>
+      </Pane>
+      <Pane layoutX="238.0" opacity="0.93" prefHeight="1112.0" prefWidth="1048.0" styleClass="viewcont">
+         <children>
+            <TextField editable="false" layoutX="44.0" layoutY="14.0" prefHeight="77.0" prefWidth="158.0" styleClass="heading" stylesheets="@style.css" text="HOME">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="516.0" layoutY="62.0" prefHeight="59.0" prefWidth="508.0" styleClass="topmenu" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="InvOverView" editable="false" layoutX="9.0" layoutY="9.0" onMouseClicked="#handleInvOverView" prefHeight="39.0" prefWidth="122.0" styleClass="topmenuitem" stylesheets="@style.css" text="   OverView">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="InvDetails" editable="false" layoutX="126.0" layoutY="9.0" onMouseClicked="#handleInvDetails" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="    Details">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="InvWholeSaler" editable="false" layoutX="236.0" layoutY="9.0" onMouseClicked="#handleInvWholeSaler" prefHeight="39.0" prefWidth="122.0" styleClass="topmenuitem" stylesheets="@style.css" text="   WholeSaler">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <Separator id="sprtr2" layoutX="120.0" layoutY="47.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: white;" visible="false" />
+                  <Separator id="sprtr3" layoutX="218.0" layoutY="46.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" visible="false" />
+                  <TextField fx:id="InvWholeSaler1" editable="false" layoutX="362.0" layoutY="9.0" onMouseClicked="#handleInvWholeSaler" prefHeight="39.0" prefWidth="135.0" styleClass="topmenuitem" stylesheets="@style.css" text="       Add New">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="14.0" layoutY="144.0" prefHeight="714.0" prefViewportHeight="712.0" prefViewportWidth="1035.0" prefWidth="1037.0">
+               <content>
+                  <Pane layoutX="4.0" layoutY="100.0" prefHeight="1195.0" prefWidth="1035.0">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="34.0" prefHeight="167.0" prefWidth="1017.0">
+                           <children>
+                              <ComboBox fx:id="FamilyCombo" layoutX="497.0" layoutY="14.0" prefHeight="25.0" prefWidth="79.0" promptText="S/O" />
+                           </children>
+                        </Pane>
+                        <TextField fx:id="FamilyName" layoutX="614.0" layoutY="50.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Label layoutX="516.0" layoutY="85.0" text="Phone No." />
+                        <TextField fx:id="MobileNo" layoutX="614.0" layoutY="81.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Label layoutX="517.0" layoutY="117.0" text="PAN No." />
+                        <TextField fx:id="PanNo" layoutX="614.0" layoutY="113.0" prefHeight="25.0" prefWidth="181.0" />
+                        <TextField fx:id="PinCode" layoutX="241.0" layoutY="143.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Label layoutX="147.0" layoutY="147.0" prefHeight="17.0" prefWidth="60.0" text="PIN Code" />
+                        <TextField fx:id="Address2" layoutX="242.0" layoutY="112.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Label layoutX="145.0" layoutY="116.0" text="Address Line2" />
+                        <TextField fx:id="Address1" layoutX="242.0" layoutY="80.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Label layoutX="144.0" layoutY="84.0" text="Address Line1" />
+                        <Label layoutX="144.0" layoutY="53.0" text="Seller Name" />
+                        <TextField fx:id="WSName" layoutX="242.0" layoutY="49.0" prefHeight="25.0" prefWidth="181.0" />
+                        <Pane layoutX="12.0" layoutY="177.0" prefHeight="557.0" prefWidth="1017.0">
+                           <children>
+                              <Pane layoutX="12.0" layoutY="12.0" prefHeight="372.0" prefWidth="994.0">
+                                 <children>
+                                    <TextField fx:id="SubItem" layoutX="116.0" layoutY="324.0" prefHeight="10.0" prefWidth="149.0" />
+                                    <Label layoutX="14.0" layoutY="325.0" prefHeight="17.0" prefWidth="66.0" text="Sub Item" />
+                                    <Label layoutX="14.0" layoutY="298.0" text="Design Name" />
+                                    <Label layoutX="14.0" layoutY="266.0" text="Type" />
+                                    <Label layoutX="14.0" layoutY="235.0" text="Material" />
+                                    <Label layoutX="378.0" layoutY="16.0" text="Hallmark" />
+                                    <TableView fx:id="StoneTable" layoutX="364.0" layoutY="223.0" prefHeight="130.0" prefWidth="605.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" />
+                                        <TableColumn prefWidth="75.0" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="BuyingPrice" layoutX="861.0" layoutY="46.0" prefHeight="25.0" prefWidth="105.0" />
+                                    <Label layoutX="684.0" layoutY="50.0" text="Buying Price" />
+                                    <Label layoutX="683.0" layoutY="19.0" text="Purity" />
+                                    <TextField fx:id="Purity" layoutX="785.0" layoutY="15.0" prefHeight="25.0" prefWidth="181.0" />
+                                    <Label layoutX="684.0" layoutY="81.0" text="Selling price" />
+                                    <Separator layoutX="333.0" layoutY="109.0" prefHeight="17.0" prefWidth="634.0" />
+                                    <Label layoutX="364.0" layoutY="123.0" prefHeight="25.0" prefWidth="122.0" text="Insert stone :" />
+                                    <ComboBox fx:id="StoneCombo" layoutX="341.0" layoutY="187.0" prefHeight="25.0" prefWidth="86.0" />
+                                    <ComboBox fx:id="StoneClassCombo" layoutX="430.0" layoutY="187.0" prefHeight="25.0" prefWidth="79.0" />
+                                    <TextField fx:id="Clarity" layoutX="513.0" layoutY="187.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <TextField fx:id="Cut" layoutX="592.0" layoutY="187.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <TextField fx:id="Pieces" layoutX="671.0" layoutY="188.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <TextField fx:id="StoneWeight" layoutX="749.0" layoutY="188.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <TextField fx:id="StoneRate" layoutX="905.0" layoutY="187.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <Label layoutX="368.0" layoutY="164.0" text="Stone" />
+                                    <Label layoutX="441.0" layoutY="164.0" text="Class" />
+                                    <Separator layoutX="330.0" layoutY="118.0" orientation="VERTICAL" prefHeight="234.0" prefWidth="0.0" />
+                                    <Button fx:id="AddStone" layoutX="893.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleaddstone" prefHeight="27.0" prefWidth="74.0" text="AddStone" />
+                                    <Separator layoutX="3.0" layoutY="380.0" prefHeight="14.0" prefWidth="994.0" />
+                                    <ImageView fitHeight="176.0" fitWidth="249.0" layoutX="36.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-size: 2px;" />
+                                    <Label layoutX="147.0" layoutY="110.0" />
+                                    <Separator layoutX="1.0" layoutY="431.0" prefHeight="3.0" prefWidth="994.0" />
+                                    <Label layoutX="127.0" layoutY="97.0" text="Upload Image" />
+                                    <ComboBox fx:id="HallMarkCombo" layoutX="464.0" layoutY="15.0" prefHeight="25.0" prefWidth="181.0" promptText="Present" />
+                                    <TextField fx:id="SellingPrice" layoutX="861.0" layoutY="78.0" prefHeight="25.0" prefWidth="105.0" />
+                                    <ComboBox fx:id="Purity1Combo" layoutX="786.0" layoutY="46.0" prefHeight="25.0" prefWidth="73.0" promptText="Purity" />
+                                    <ComboBox fx:id="Purity2Combo" layoutX="786.0" layoutY="78.0" prefHeight="25.0" prefWidth="73.0" promptText="Purity" />
+                                    <ComboBox fx:id="CWPCombo" layoutX="829.0" layoutY="188.0" prefHeight="25.0" prefWidth="64.0" />
+                                    <Button fx:id="UploadImage" layoutX="176.0" layoutY="188.0" mnemonicParsing="false" text="Upload" />
+                                    <ComboBox fx:id="MaterialCombo" layoutX="115.0" layoutY="231.0" prefWidth="150.0" promptText="Material" />
+                                    <ComboBox fx:id="TypeCombo" layoutX="115.0" layoutY="262.0" prefWidth="150.0" promptText="Type" />
+                                    <ComboBox fx:id="DesignNameCombo" layoutX="115.0" layoutY="294.0" prefWidth="150.0" promptText="DesignName" />
+                                    <Label layoutX="14.0" layoutY="356.0" text="Making Charges" />
+                                    <TextField fx:id="MakingCharges" layoutX="116.0" layoutY="352.0" prefHeight="16.0" prefWidth="149.0" />
+                                    <Button fx:id="AddMaterial" layoutX="271.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleAddMaterial" prefHeight="25.0" prefWidth="86.0" text="AddMat" />
+                                    <Button fx:id="AddNewType" layoutX="271.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleAddNewType" prefHeight="25.0" prefWidth="86.0" text="AddType" />
+                                    <Button fx:id="AddNewDesignName" layoutX="271.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleAddNewDesignName" prefHeight="25.0" prefWidth="86.0" text="AddDesign" />
+                                    <Label layoutX="829.0" layoutY="359.0" text="Total:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="TotalStonePrice" layoutX="878.0" layoutY="360.0" prefHeight="20.0" prefWidth="105.0" visible="false">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="CompleteStoneWeight" layoutX="465.0" layoutY="77.0" prefHeight="25.0" prefWidth="179.0" />
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="GrossWeight" layoutX="476.0" layoutY="58.0" prefHeight="25.0" prefWidth="181.0" />
+                              <Label layoutX="391.0" layoutY="62.0" text="Gross Wt." />
+                              <Label layoutX="391.0" layoutY="93.0" text="Stone Wt." />
+                             
+                              <Label layoutX="528.0" layoutY="174.0" text="Clarity" />
+                              <Label layoutX="609.0" layoutY="175.0" text="Cut" />
+                              <Label layoutX="687.0" layoutY="174.0" text="Pieces" />
+                              <Label layoutX="764.0" layoutY="175.0" text="Weight/St" />
+                              <Label layoutX="843.0" layoutY="172.0" text="C/W/P" />
+                              <Label layoutX="922.0" layoutY="171.0" text="Rate" />
+                              <Label layoutX="54.0" layoutY="405.0" prefHeight="25.0" prefWidth="69.0" style="-fx-font-size: 15px;" text="Quantity">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Quantity" layoutX="157.0" layoutY="406.0" prefHeight="25.0" prefWidth="67.0" />
+                              <TextField fx:id="singlemetalweight" layoutX="400.0" layoutY="406.0" prefHeight="25.0" prefWidth="112.0" />
+                              <Label layoutX="280.0" layoutY="406.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Metal Wt.">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="545.0" layoutY="405.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Price">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="SingleOrnamentPrice" layoutX="632.0" layoutY="406.0" prefHeight="25.0" prefWidth="135.0" />
+                              <TableView fx:id="OrnamentTable" layoutX="52.0" layoutY="462.0" prefHeight="227.0" prefWidth="939.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="AddOrnament" layoutX="900.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleAddOrnament" text="AddOrnament" />
+                              <Button fx:id="AddSimilar" layoutX="817.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleAddSimilar" text="AddSimilar" />
+                           </children>
+                        </Pane>
+                        <ComboBox layoutX="11.0" layoutY="5.0" prefWidth="150.0" promptText="          New Stock" />
+                        <Label layoutX="65.0" layoutY="871.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Type">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="TotalTypes" layoutX="192.0" layoutY="872.0" prefHeight="25.0" prefWidth="158.0" />
+                        <TextField fx:id="TotalItems" layoutX="192.0" layoutY="905.0" prefHeight="25.0" prefWidth="158.0" />
+                        <Label layoutX="65.0" layoutY="904.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Items">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="937.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Items">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="192.0" layoutY="938.0" prefHeight="25.0" prefWidth="158.0" />
+                        <TextField fx:id="TotalDue" layoutX="516.0" layoutY="939.0" prefHeight="25.0" prefWidth="158.0" />
+                        <Label layoutX="389.0" layoutY="938.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Due">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="389.0" layoutY="905.0" prefHeight="25.0" prefWidth="112.0" style="-fx-font-size: 15px;" text="Previous Balance">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="PreviousBalance" layoutX="516.0" layoutY="906.0" prefHeight="25.0" prefWidth="158.0" />
+                        <TextField fx:id="TotalPrice" layoutX="516.0" layoutY="873.0" prefHeight="25.0" prefWidth="158.0" />
+                        <Label layoutX="389.0" layoutY="872.0" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 15px;" text="Total Price">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="SaveInventory" layoutX="883.0" layoutY="918.0" mnemonicParsing="false" onAction="#handleSaveInventory" prefHeight="36.0" prefWidth="122.0" text="Save" />
+                        <VBox fx:id="suggestion" layoutX="243.0" layoutY="81.0" prefHeight="121.0" prefWidth="180.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="238.0" opacity="0.93" prefHeight="859.0" prefWidth="1048.0" styleClass="viewcont" visible="false">
+         <children>
+            <TextField editable="false" layoutX="44.0" layoutY="14.0" prefHeight="77.0" prefWidth="158.0" styleClass="heading" stylesheets="@style.css" text="HOME">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="350.0" layoutY="62.0" prefHeight="59.0" prefWidth="335.0" styleClass="topmenu" stylesheets="@style.css">
+               <children>
+                  <TextField editable="false" layoutX="8.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Overview">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="113.0" layoutY="10.0" prefHeight="39.0" prefWidth="96.0" styleClass="topmenuitem" stylesheets="@style.css" text="Invoices">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="209.0" layoutY="10.0" prefHeight="39.0" prefWidth="105.0" styleClass="topmenuitem" stylesheets="@style.css" text="Inventory">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Separator id="sprtr1" layoutX="16.0" layoutY="48.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" />
+                  <Separator id="sprtr2" layoutX="120.0" layoutY="47.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: white;" visible="false" />
+                  <Separator id="sprtr3" layoutX="218.0" layoutY="46.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: white;" visible="false" />
+               </children>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="146.0" prefHeight="317.0" prefWidth="657.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <LineChart layoutX="14.0" layoutY="14.0" legendSide="RIGHT" prefHeight="288.0" prefWidth="615.0" styleClass="grhtxt" stylesheets="@style.css" title="Sales">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="712.0" layoutY="146.0" prefHeight="249.0" prefWidth="322.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <PieChart layoutX="2.0" layoutY="11.0" legendSide="RIGHT" prefHeight="221.0" prefWidth="311.0" styleClass="grhtxt" stylesheets="@style.css" title="Expenses" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="478.0" prefHeight="221.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="135.0" styleClass="txtfld" stylesheets="@style.css" text="Chit Funds">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow level="0.4" />
+               </effect>
+            </Pane>
+            <Pane layoutX="407.0" layoutY="478.0" prefHeight="365.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="100.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Kaarigar">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="727.0" layoutY="413.0" prefHeight="308.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <children>
+                  <TextField alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" styleClass="txtfld" stylesheets="@style.css" text="Gumasth">
+                     <font>
+                        <Font name="SansSerif Bold" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="33.0" layoutY="713.0" prefHeight="130.0" prefWidth="362.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutX="725.0" layoutY="736.0" prefHeight="101.0" prefWidth="305.0" styleClass="salesbox" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+</AnchorPane>

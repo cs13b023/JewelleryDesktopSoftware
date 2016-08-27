@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="girvi.OnInvoiceSaveController">
+   <children>
+      <TextField fx:id="gumastha" layoutX="275.0" layoutY="89.0" />
+      <ComboBox fx:id="ratingcombobox" layoutX="275.0" layoutY="142.0" prefWidth="150.0" />
+      <Button layoutX="316.0" layoutY="225.0" mnemonicParsing="false" onAction="#SaveDetails" text="Save" />
+      <Label layoutX="144.0" layoutY="93.0" text="Gumastha" />
+      <Label layoutX="144.0" layoutY="146.0" text="Customer Rating" />
+   </children>
+</AnchorPane>

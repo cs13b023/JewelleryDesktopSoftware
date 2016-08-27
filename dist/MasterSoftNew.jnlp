@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MasterSoftNew.jnlp">
+  <information>
+    <title>MasterSoftNew</title>
+    <vendor>preetham</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MasterSoftNew.jar" size="7868487" download="eager" />
+    <jar href="lib/jsoup-1.8.2.jar" size="314978" download="eager" />
+    <jar href="lib/mysql-connector-java-5.0.8-bin.jar" size="540852" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MasterSoftNew" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mastersoftnew.MasterSoftNew"  name="MasterSoftNew" />
+  <update check="always"/>
+</jnlp>

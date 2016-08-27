@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="301.0" prefWidth="481.0" styleClass="Pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chitfund.NewmemberController">
+   <children>
+      <Label layoutX="93.0" layoutY="50.0" styleClass="Label" text="Customer Name" textFill="#f8f6f6" />
+      <TextField fx:id="setname" layoutX="209.0" layoutY="45.0" prefHeight="25.0" prefWidth="184.0" styleClass="TextField" />
+      <Label layoutX="94.0" layoutY="92.0" styleClass="Label" text="Phonenumber" textFill="#eee5e5" />
+      <TextField fx:id="setphonenumber" layoutX="209.0" layoutY="87.0" prefHeight="25.0" prefWidth="184.0" styleClass="TextField" />
+      <Label layoutX="97.0" layoutY="135.0" styleClass="Label" text="Address" textFill="#ebe3e3" />
+      <Button layoutX="338.0" layoutY="257.0" mnemonicParsing="false" onAction="#addmember" prefHeight="25.0" prefWidth="104.0" text="Add" />
+      <Button layoutX="215.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Clear" />
+      <TextArea fx:id="setaddress" layoutX="210.0" layoutY="132.0" prefHeight="93.0" prefWidth="184.0" promptText="Enter your Address here" styleClass="TextField" />
+   </children>
+</AnchorPane>

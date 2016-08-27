@@ -1,0 +1,171 @@
+.anchorpane{
+    -fx-background-color: #d6d6d6 ;
+
+     -fx-effect: dropshadow(two-pass-box, #f0f8ff, 0, 0, 0, 0);
+     
+}
+.menubody{
+    -fx-background-color : black;
+    -fx-opacity: 0.75;
+ }
+.menuitem{
+    -fx-background-color : black ;
+		-fx-text-fill: WHITE;
+        -fx-border-color :lightgrey ; 
+		-fx-border-width : 0.3px;
+		-fx-border-style: solid;
+}
+.ImageView {
+    -fx-border-size : 2px;
+}
+.menuitem:hover{
+	-fx-background-color: white;
+        -fx-text-fill: black ;
+}
+.menuitem:active{
+	-fx-background-color: white;
+}
+.button {
+        -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    	-fx-background-radius: 5,3,4;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0, 0, 1 );
+
+}
+.ComboBox {
+        -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    	-fx-background-radius: 4,3,3;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 0, 0, 1, 1 );
+
+}
+.DatePicker {
+        -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0, 0, 1 );
+
+}
+.TextField{
+	-fx-background-radius: 4,3,3;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 1.5 , 1.5 );
+}
+
+
+.profimage{
+
+}
+.viewcont{
+	-fx-background-color:rgb(27,39,48);
+}
+.heading{
+
+	-fx-text-fill:black;
+        -fx-font-size: 32px;
+        -fx-font-family: 'Garamond';
+}
+.TabPane{
+    -fx-border-style : solid;
+    -fx-border-size : 2px;
+    -fx-border-color : lightgrey;
+}
+.Pane_specific{
+    -fx-background-color: white;
+ -fx-effect: dropshadow(one-pass-box, grey, 5, 0, 1, 1);
+ -fx-background-radius: 2px 2px 2px 2px;
+}
+.topmenu{
+	-fx-background-color:rgb(27,39,48);
+	-fx-text-fill:white;
+
+}
+.Label{
+
+	-fx-text-fill :black;
+	-fx-font-family :'MS Reference Sans Serif';
+	-fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) ,
+                1, 0.0 , 0 , 1);
+}
+.Label_heading{
+        -fx-font-family: 'Book Antiqua';
+        -fx-text-fill : black;
+        -fx-font-size: 14px;
+        -fx-font-weight: bold;
+	-fx-font-family :'MS Reference Sans Serif';
+	-fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) ,
+                1, 0.0 , 0 , 1);
+}
+.topmenuitem{
+	-fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);	
+	-fx-text-fill:white;
+        -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) ,
+                1, 0.0 , 0 , 1);
+}
+.Separator_specific{
+    -fx-opacity : 0.6;
+}
+.Label_arrow{
+    -fx-font-size : 22px;
+}
+.topmenuitem :active{
+        -fx-effect: innershadow( three-pass-box , lightgrey ,
+                1, 0.0 , 0 , 1 );
+
+}
+.topmenuitem :hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+.Border{
+    -fx-background-color: #f0f8ff;
+}
+.salesbox{
+	-fx-background-color:rgb(27,39,48);
+	-fx-box-shadow:0px 0px 3px 3px white;
+}
+.txtfld{
+	-fx-background-color:white;		
+	-fx-text-fill:black;
+}
+.Separator{
+    -fx-opacity : 0;
+    -fx-border-color : #f0f8ff;
+}
+.grhtxt{
+	-fx-title-color:white;
+        -fx-text-fill: white;
+}
+
+.body{
+    -fx-background-color: white;
+    /*-fx-border-color: darkgrey;
+    -fx-border-style : solid;
+    -fx-border-size: 10px;*/
+    }
+.Pane{
+    -fx-background-color: white;
+ -fx-effect: dropshadow(one-pass-box, grey, 15, 0, 2, 2);
+ -fx-background-radius: 4px 4px 4px 4px;
+}
